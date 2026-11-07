@@ -641,6 +641,235 @@ h1, h2, h3, h4, p { margin: 0; }
   direction: rtl;
 }
 
+/* ===== PARENTS INVITATION ===== */
+#parents-invitation {
+  padding: 100px 20px;
+  background: linear-gradient(160deg, #8FA8C2 0%, #6B8BA8 50%, #5A7A98 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.parents-invitation-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(250, 246, 240, 0.1) 0%, transparent 70%);
+}
+
+.parents-invitation-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.parents-invitation-content .section-eyebrow {
+  color: rgba(232, 197, 176, 0.85);
+}
+
+.parents-invitation-content .section-title {
+  color: var(--cream);
+}
+
+.parents-invitation-card {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.88));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(200, 169, 106, 0.3);
+  border-radius: 24px;
+  padding: 56px 40px;
+  margin-top: 48px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.parents-invitation-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.parents-invitation-intro {
+  margin-bottom: 32px;
+}
+
+.parents-invitation-label {
+  font-family: var(--font-body);
+  font-size: clamp(13px, 2vw, 16px);
+  color: var(--text-light);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.parents-invitation-daughter {
+  font-family: 'Allura', cursive;
+  font-size: clamp(42px, 6vw, 64px);
+  color: var(--green);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.parents-invitation-names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 32px 24px;
+  background: rgba(143, 168, 194, 0.08);
+  border-radius: 16px;
+}
+
+.parent-name-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.parent-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  font-weight: 600;
+}
+
+.parent-name {
+  font-family: var(--font-serif);
+  font-size: clamp(20px, 3vw, 28px);
+  color: var(--green-dark);
+  font-weight: 600;
+}
+
+.parent-separator {
+  font-family: var(--font-script);
+  font-size: clamp(32px, 5vw, 42px);
+  color: var(--gold);
+  margin: 8px 0;
+}
+
+.parents-invitation-message {
+  margin-bottom: 40px;
+}
+
+.parents-invitation-message > p {
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--text-medium);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.bride-groom-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.couple-name-display {
+  font-family: 'Allura', cursive;
+  font-size: clamp(32px, 5vw, 48px);
+  color: var(--green);
+  line-height: 1.3;
+}
+
+.couple-separator {
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.parents-invitation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+  padding: 32px 24px;
+  background: rgba(201, 123, 138, 0.06);
+  border-radius: 16px;
+  border: 1px solid rgba(200, 169, 106, 0.2);
+}
+
+.invitation-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+}
+
+.invitation-detail-item i {
+  width: 40px;
+  height: 40px;
+  background: var(--gold-gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.invitation-detail-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.detail-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.detail-value {
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--green-dark);
+  font-weight: 600;
+}
+
+.detail-arabic {
+  font-family: var(--font-serif);
+  font-size: clamp(13px, 2vw, 16px);
+  color: var(--text-medium);
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.parents-invitation-footer {
+  padding-top: 24px;
+  border-top: 1px solid rgba(200, 169, 106, 0.2);
+}
+
+.parents-invitation-footer p {
+  font-family: var(--font-serif);
+  font-size: clamp(15px, 2.3vw, 18px);
+  color: var(--gold-dark);
+  font-style: italic;
+  line-height: 1.8;
+}
+
 /* ===== COUPLE SECTION ===== */
 #couple {
   padding: 100px 20px;
